@@ -1,0 +1,13 @@
+- title: accueil
+  url: /
+  external: false
+
+- title: à propos
+  url: /about/
+  external: false
+
+
+# Example:
+# - title: github
+#   url: https://github.com/piharpi/jekyll-klise
+#   external: true
