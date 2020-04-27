@@ -81,7 +81,7 @@ plugins:
 
 podcast:
   title: Les "Sages"
-  description: Chroniques de sages-femmes & anecdotes de naissance. Avez-vous toujours eu l'envie de voir l'envers du décors de nos gardes de 12h ? Entre rétention urinaire, aller-retour sans fin dans les salles de naissance, et pleurs de douleurs ou de joie... bienvenue à la maternité. Si vous aussi, vous avez une anecdotes à partager, écrivez-nous avec l'adresse mail disponible sur notre site web.
+  description: Chroniques de sages-femmes & anecdotes de naissance. Avez-vous toujours eu l'envie de voir l'envers du décors de nos gardes de 12h ? Entre rétention urinaire, aller-retour sans fin dans les salles de naissance, et pleurs de douleurs ou de joie... bienvenue à la maternité.
   url: podcast.xml # podcast xml url
   author: Les "Sages"
   email: les.sages@mailo.com

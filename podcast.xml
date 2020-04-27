@@ -47,6 +47,9 @@ layout: null
             <content:encoded>
               <![CDATA[ {{ post.description | cdata_escape }} ]]>
             </content:encoded>
+            <description>{{ post.description | xml_escape }}</description>
+            <itunes:summary>{{ post.description| xml_escape }}</itunes:summary>
+            <itunes:subtitle> {{ post.description| xml_escape }}</itunes:subtitle>
             <guid>{{ post.guid }}</guid>
         </item>
         {% endfor %}
