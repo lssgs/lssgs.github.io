@@ -26,7 +26,7 @@ layout: null
         <itunes:block>{{ site.podcast.block }}</itunes:block>
         {% for post in site.categories.podcast %}
         <item>
-            <title>{{ post.title }}</title>
+            <itunes:title>{{ post.title }}</itunes:title>
             <itunes:author>{{ post.author }}</itunes:author>
             <itunes:season>{{ post.season }}</itunes:season>
             <itunes:episode>{{ post.episode }}</itunes:episode>
@@ -37,6 +37,9 @@ layout: null
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
             <enclosure url='{{ post.audio | absolute_url }}' length='{{ post.length | xml_escape }}'/>
             <description>{{ post.description | xml_escape | strip_newlines }}</description>
+            <itunes:summary>{{ post.description | xml_escape | strip_newlines }}</itunes:summary>
+            <itunes:subtitle> </itunes:subtitle>
+            <guid>{{ post.guid }}</guid>
         </item>
         {% endfor %}
     </channel>
