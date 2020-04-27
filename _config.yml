@@ -91,6 +91,6 @@ podcast:
   category: Health &amp; Fitness # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
   subcategory: Medicine
   type: episodic # episodic | serial
-  explicit: true # true | false
+  explicit: false # true | false
   complete: no # 'yes' | 'no'
   block: no # 'yes' | 'no'
