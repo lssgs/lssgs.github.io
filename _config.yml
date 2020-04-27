@@ -88,8 +88,12 @@ podcast:
   logo: assets/img/logo_podcast.jpg
  # logo in 1400 – 3000 pixel
   language: fr # http://www.loc.gov/standards/iso639-2/php/code_list.php
-  category: Health &amp; Fitness, Kids &amp; Family, Society &amp; Culture # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-  subcategory: Medicine, Parenting, Personal Journals
+  category1: Health &amp; Fitness
+  category2: Kids &amp; Family
+  category3: Society &amp; Culture # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  subcategory1: Medicine
+  subcategory2: Parenting
+  subcategory3: Personal Journals
   type: episodic # episodic | serial
   explicit: false # true | false
   complete: no # 'yes' | 'no'
