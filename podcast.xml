@@ -36,7 +36,11 @@ layout: null
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
             <enclosure url='{{ post.audio | absolute_url }}' length='{{ post.length | xml_escape }}'/>
-            <description><![CDATA[ {{ post.description | xml_escape | strip_newlines }} ]]></content:encoded></description>
+            <description>
+              <content:encoded>
+                <![CDATA[ {{ post.description | cdata_escape }} ]]>
+              </content:encoded>
+            </description>
             <itunes:summary>{{ post.description | xml_escape | strip_newlines }}</itunes:summary>
             <itunes:subtitle>{{ post.description | xml_escape | strip_newlines }}</itunes:subtitle>
             <guid>{{ post.guid }}</guid>
