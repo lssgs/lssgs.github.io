@@ -7,6 +7,8 @@ layout: null
     <channel>
         <title>{{ site.podcast.title }}</title>
         <description>{{ site.podcast.description | xml_escape }}</description>
+        <itunes:summary>{{ site.podcast.description| xml_escape }}</itunes:summary>
+        <itunes:subtitle>  <![CDATA[ Podcast bi-mensuel, enregistré avec un smartphone et une éponge, rempli d'anecdotes de sages-femmes. Si vous aussi, vous travaillez dans le milieu de la périnatalité et que vous voulez raconter une histoire, sentez vous libre de m'envoyer un <a href="mailto:les.sages@mailo.com"> mail</a>.]]></itunes:subtitle>
         <link>{{ '/' | absolute_url }}</link>
         <itunes:author>{{ site.podcast.author }}</itunes:author>
         <itunes:email>{{ site.podcast.email }}</itunes:email>
@@ -45,8 +47,6 @@ layout: null
             <content:encoded>
               <![CDATA[ {{ post.description | cdata_escape }} ]]>
             </content:encoded>
-            <itunes:summary>{{ post.description | xml_escape | strip_newlines }}</itunes:summary>
-            <itunes:subtitle>{{ post.description | xml_escape | strip_newlines }}</itunes:subtitle>
             <guid>{{ post.guid }}</guid>
         </item>
         {% endfor %}
