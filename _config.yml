@@ -15,11 +15,11 @@ author:
     Podcast bi-mensuel, rempli d'anecdotes de sages-femmes. Si vous aussi, vous travaillez dans le milieu de la périnatalité et que vous voulez raconter une histoire, sentez vous libre de <b> m'envoyer un <a href="mailto:les.sages@mailo.com"> mail</a>.</b>
   username: username
   email: les.sages@mailo.com
-  avatar: /assets/img/avatar_new.jpg
+  avatar: assets/img/avatar_new.jpg
 
 # Url settings
 url: #"https://klise.now.sh"
-baseurl:
+baseurl: /lessages
 permalink: /:title/
 google_analytics:
 fb_appid:
@@ -82,10 +82,11 @@ plugins:
 podcast:
   title: Les "Sages"
   description: Chroniques de sages-femmes & anecdotes de naissance. Avez-vous toujours eu l'envie de voir l'envers du décors de nos gardes de 12h ? Entre rétention urinaire, aller-retour sans fin dans les salles de naissance, et pleurs de douleurs ou de joie... bienvenue à la maternité. Si vous aussi, vous avez une anecdotes à partager, écrivez-nous avec l'adresse mail disponible sur notre site web.
-  url: /podcast.xml # podcast xml url
+  url: podcast.xml # podcast xml url
   author: Les "Sages"
   email: les.sages@mailo.com
-  logo: /assets/img/logo_podcast.jpg # logo in 1400 – 3000 pixel
+  logo: assets/img/logo_podcast.jpg
+ # logo in 1400 – 3000 pixel
   language: fr # http://www.loc.gov/standards/iso639-2/php/code_list.php
   category: Personal Journals # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
   subcategory: Medicine, Parenting, Relationships
