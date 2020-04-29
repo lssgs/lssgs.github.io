@@ -19,7 +19,7 @@ author:
 
 # Url settings
 url: #"https://klise.now.sh"
-baseurl: /lessages
+baseurl:
 permalink: /:title/
 google_analytics:
 fb_appid:
