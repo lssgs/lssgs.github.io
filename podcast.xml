@@ -34,6 +34,7 @@ layout: null
         <itunes:block>{{ site.podcast.block }}</itunes:block>
         {% for post in site.categories.podcast %}
         <item>
+          <title>{{ post.title }}</title>
             <itunes:title>{{ post.title }}</itunes:title>
             <itunes:author>{{ post.author }}</itunes:author>
             <itunes:season>{{ post.season }}</itunes:season>
