@@ -43,7 +43,7 @@ layout: null
             <link>{{ post.url | absolute_url }}</link>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
-            <enclosure url='{{ post.audio | absolute_url }}' length='{{ post.length | xml_escape }}'/>
+            <enclosure url="{{ post.audio | absolute_url }}" length="{{ post.length | xml_escape }}" type="audio/x-m4a" />
             <content:encoded>
               <![CDATA[ {{ post.description | cdata_escape }} ]]>
             </content:encoded>
